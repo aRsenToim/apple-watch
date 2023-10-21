@@ -1,0 +1,50 @@
+.Card {
+ cursor: pointer;
+ padding: 20px;
+ margin: 0px 15px;
+ height: 400px;
+ width: 200px;
+ position: relative;
+ &__info{
+  position: absolute;
+  bottom: 0px;
+ }
+ &__image {
+  width: 200px;
+  object-fit: cover;
+ }
+
+ &__characteristic {
+  li {
+   list-style: none;
+   margin: 10px 0px;
+   font-size: 14px;
+  }
+ }
+
+ &__buttons {
+  display: flex;
+  align-items: center;
+ }
+
+ &__button {
+  background-color: #1675E4;
+  font-size: 12px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  padding: 5px;
+  margin-right: 10px;
+ }
+ &__buttonDelete{
+  background-color: #02356f;
+  font-size: 12px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  padding: 5px;
+  margin-right: 10px;
+ }
+}

@@ -1,0 +1,21 @@
+.Search {
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ padding: 20px 10px;
+ background-color: #fff;
+ -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+ -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+ box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+
+ &__title {}
+ &__input{
+  outline: none;
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  border-radius: 20px;
+  &:focus{
+   outline: none;
+  }
+ }
+}

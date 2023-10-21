@@ -1,0 +1,49 @@
+.AmountSum {
+ background-color: #fff;
+ -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+ -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+ box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+ padding: 20px;
+ width: 300px;
+
+ &__title {
+  font-size: 18px;
+ }
+
+ &__line {
+  margin: 6px 0px;
+  border: 1px solid #ccc;
+ }
+
+ &__total {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+ }
+
+ &__button {
+  margin-top: 10px;
+  width: 100%;
+  padding: 10px;
+  font-size: 15px;
+  border: none;
+  background-color: #FF46BC;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 20px;
+  color: #fff;
+ }
+
+ &__delete {
+  margin-top: 10px;
+  width: 100%;
+  padding: 10px;
+  font-size: 15px;
+  border: none;
+  background-color: #000;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 20px;
+  color: #fff;
+ }
+}

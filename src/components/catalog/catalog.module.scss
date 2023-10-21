@@ -1,0 +1,12 @@
+.Catalog {
+ background-color: #fff;
+ padding: 20px 0px;
+ -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+ -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+ box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+ &__items{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+ }
+}
