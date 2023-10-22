@@ -1,0 +1,29 @@
+.faq{
+ background-color: #fff;
+ margin: 20px 0px;
+ -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+ -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+ box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+ padding: 20px;
+ &__items{
+
+ }
+ &__item{
+  list-style: none;
+  text-align: start;
+ }
+ .item__title{
+  padding: 15px 0px;
+  border-bottom: 2px solid #e6e6e6;
+  font-size: 19px;
+  cursor: pointer;
+ }
+ .item__description{
+  font-size: 16px;
+  border-bottom: 2px solid #e6e6e6;
+ }
+ &__title{
+  text-align: center;
+  margin: 10px auto;
+ }
+}

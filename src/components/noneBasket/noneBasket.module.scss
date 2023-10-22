@@ -1,12 +1,19 @@
-.noneBasket{
+.noneBasket {
  text-align: center;
+ background-color: #fff;
+ width: 100%;
+ -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+ -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+ box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
  margin: 0px auto;
- &__title{
+
+ &__title {
   font-size: 40px;
   font-weight: 500;
   margin: 10px;
  }
- &__link{
+
+ &__link {
   background-color: #FF46BC;
   color: #fff;
   width: 200px;

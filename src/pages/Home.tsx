@@ -8,6 +8,7 @@ import Navbar from "../components/navlink/Navbar"
 import { IProductProfile } from "../types/profileType"
 import { addBasketFetch, deleteBasket } from "../store/actions/profileAction"
 import { getSum } from "../store/slices/profileSlice"
+import Prealoder from "../components/prealoder/prealoder"
 
 
 const Home: FC = () => {
@@ -26,11 +27,13 @@ const Home: FC = () => {
   setIsProducts(arr);
  }, [isLink])
 
- 
+
 
  return <div>
-  <Navbar isLink={isLink} setIsLink={(link: string) => { dispatch(setIsLink(link)); dispatch(getSum())}} />
-  <Catalog deleteBasket={(product: IProductProfile) => {dispatch(deleteBasket(basket ?? [], product)); } } addBasket={(product: IProductProfile) => {dispatch(addBasketFetch(basket ?? [], product));}} products={!isProducts || isLink == 'All' ? products : isProducts} basket={basket ?? []} />
+  {isProducts ? <>
+   <Navbar isLink={isLink} setIsLink={(link: string) => { dispatch(setIsLink(link)); dispatch(getSum()) }} />
+   <Catalog deleteBasket={(product: IProductProfile) => { dispatch(deleteBasket(basket ?? [], product)); }} addBasket={(product: IProductProfile) => { dispatch(addBasketFetch(basket ?? [], product)); }} products={!isProducts || isLink == 'All' ? products : isProducts} basket={basket ?? []} />
+  </> : <Prealoder />}
  </div>
 }
 

@@ -1,9 +1,9 @@
+import AboutUs from "../components/AboutUs/AboutUs"
+import Reviews from "../components/Reviews/Reviews"
+import FaqComponent from "../components/faq/faq"
 import Placing from "../components/placing/placing"
-import AboutUs from "../pages/AboutUs"
-import FAQ from "../pages/FAQ"
 import Home from "../pages/Home"
 import Product from "../pages/Products"
-import Reviews from "../pages/Reviews"
 import AllProducts from "../pages/allProducts"
 import Basket from "../pages/basket"
 
@@ -43,7 +43,7 @@ export const routes: IRoute[] = [
  },
  {
   path: RoutesName.FAQ,
-  element: FAQ
+  element: FaqComponent
  },
  {
   path: RoutesName.Reviews,

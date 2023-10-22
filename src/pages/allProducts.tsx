@@ -7,6 +7,7 @@ import { useAppDispatch, useAppSelector } from "../store/hooks"
 import { getSum } from "../store/slices/profileSlice"
 import { addBasketFetch, deleteBasket } from "../store/actions/profileAction"
 import { IProductProfile } from "../types/profileType"
+import Prealoder from "../components/prealoder/prealoder"
 
 
 
@@ -27,8 +28,9 @@ const AllProducts = () => {
 
 
  return <div>
-  <Search value={input} title="All products:" changeInput={(e: React.ChangeEvent<HTMLInputElement>) => { setInput(e.currentTarget.value) }} />
-  <Catalog deleteBasket={(product: IProductProfile) => {dispatch(deleteBasket(basket ?? [], product)); dispatch(getSum())} } addBasket={(product: IProductProfile) => {dispatch(addBasketFetch(basket ?? [], product)); dispatch(getSum())}} basket={basket ?? []} products={!isProducts || input == '' ? products : isProducts} />
+  {isProducts ? <><Search value={input} title="All products:" changeInput={(e: React.ChangeEvent<HTMLInputElement>) => { setInput(e.currentTarget.value) }} />
+   <Catalog deleteBasket={(product: IProductProfile) => { dispatch(deleteBasket(basket ?? [], product)); dispatch(getSum()) }} addBasket={(product: IProductProfile) => { dispatch(addBasketFetch(basket ?? [], product)); dispatch(getSum()) }} basket={basket ?? []} products={!isProducts || input == '' ? products : isProducts} />
+  </> : <Prealoder />}
  </div>
 }
 
