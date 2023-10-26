@@ -5,6 +5,7 @@ import AmountSum from "../components/amountSum/amount"
 import { buyProducts, deleteAllBasket, deleteBasket } from "../store/actions/profileAction"
 import { IProductProfile } from "../types/profileType"
 import NoneBasket from "../components/noneBasket/noneBasket"
+import BasketComponent from "../components/basketComponent/basketComponent"
 
 
 
@@ -17,12 +18,11 @@ const Basket: FC = () => {
  return <div style={{
   display: "flex",
   alignItems: "flex-start",
-  justifyContent: "space-between"
+  justifyContent: "space-between",
  }}>
-  {basket?.length == 0 ? <NoneBasket /> : <>
-   <CatalogBasket basket={basket ?? []} deleteBasket={(product: IProductProfile) => { dispatch(deleteBasket(basket ?? [], product)); }} />
-   <AmountSum sum={sum} deleteAll={() => {dispatch(deleteAllBasket())}} buyProducts={() => {dispatch(buyProducts(basket ?? []))}}/>
-  </>}
+  {basket?.length == 0 ? <NoneBasket /> : <div>
+   <BasketComponent sum={sum} basket={basket ?? []} deleteBasket={(product: IProductProfile) => { dispatch(deleteBasket(basket ?? [], product))} } deleteAll={() => {dispatch(deleteAllBasket())}} buyProducts={() => {dispatch(buyProducts(basket ?? []))}}/>
+  </div>}
  </div>
 }
 

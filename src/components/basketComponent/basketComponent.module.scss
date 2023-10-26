@@ -1,0 +1,15 @@
+.BasketComponent{
+ display: flex;
+ justify-content: space-between;
+ align-items: flex-start;
+ flex-wrap: wrap;
+ width: 100%;
+}
+
+
+
+@media(max-width: 1000px){
+ .BasketComponent{
+  
+ }
+}

@@ -24,3 +24,23 @@
   color: #0059ff;
  }
 }
+
+
+@media (max-width: 750px) {
+ .Navbar {
+  display: block;
+  &__links{
+   margin-top: 10px;
+   display: flex;
+   align-items: center;
+  }
+ }
+}
+@media (max-width: 450px) {
+ .Navbar {
+  display: block;
+  &__links{
+   display: none;
+  }
+ }
+}

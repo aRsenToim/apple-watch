@@ -39,3 +39,12 @@
   display: block;
  }
 }
+
+@media (max-width: 800px) {
+ .Footer {
+  display: block;
+  &__section{
+   margin: 20px 0px;
+  }
+ }
+}

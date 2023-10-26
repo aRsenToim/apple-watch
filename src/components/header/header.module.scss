@@ -5,7 +5,7 @@
  -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
  margin: 30px 0px;
-
+ position: relative;
  &__logo {
   background-color: #fff;
   width: 140px;
@@ -39,5 +39,63 @@
   align-items: center;
   text-decoration: none;
   color: #fff;
+ }
+
+ &__burgerBtn{
+  display: none;
+  background-color: #3A3A3A;
+  width: 100%;
+  padding: 20px;
+  padding-right: 20px;
+  text-align: end;
+
+  button{
+   color: #fff;
+   border: none;
+   background: none;
+   img{
+    width: 25px;
+   }
+  }
+ }
+
+ &__burger{
+  position: absolute;
+  display: none;
+  top: 60px;
+  width: 100%;
+  z-index: 1000;
+  transition: 0.5s;
+ }
+ .Burger__navbar{
+  text-align: center;
+ }
+ .Burger__link{
+  list-style: none;
+  background-color: #3A3A3A;
+  padding: 10px 0px;
+  border: 1px solid #000;
+ }
+ .Burger__Navlink{
+  color: #fff;
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 19px;
+  display: flex;
+  justify-content: center;
+  img {
+   width: 22px;
+   margin: 0px 5px;
+  }
+ }
+}
+
+
+@media (max-width: 1050px) {
+ .Header__burgerBtn{
+  display: block;
+ }
+ .Header__links{
+  display: none;
  }
 }

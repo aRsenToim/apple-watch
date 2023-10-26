@@ -5,9 +5,16 @@
  height: 400px;
  width: 200px;
  position: relative;
- &__info{
+
+ &__info {
   position: absolute;
   bottom: 0px;
+ }
+
+ &__title{
+  margin: 0px auto;
+  width: 280px;
+  text-align: center;
  }
  &__image {
   width: 200px;
@@ -35,9 +42,9 @@
   cursor: pointer;
   border-radius: 10px;
   padding: 5px;
-  margin-right: 10px;
  }
- &__buttonDelete{
+
+ &__buttonDelete {
   background-color: #02356f;
   font-size: 12px;
   color: #fff;
@@ -45,6 +52,51 @@
   cursor: pointer;
   border-radius: 10px;
   padding: 5px;
-  margin-right: 10px;
+ }
+}
+
+
+@media (max-width: 950px) {
+ .Card {
+  cursor: pointer;
+  padding: 20px;
+  margin: 20px;
+  height: 400px;
+  width: 250px;
+  position: relative;
+  &__image {
+   width: 220px;
+   object-fit: cover;
+  }
+  &__button {
+   margin: 0px auto;
+  }
+  &__buttonDelete {
+   margin: 0px auto;
+  }
+ }
+}
+@media (max-width: 750px) {
+ .Card {
+  cursor: pointer;
+  padding: 20px;
+  margin: 20px;
+  height: 400px;
+  width: 300px;
+  position: relative;
+  &__image {
+   width: 220px;
+   margin-left: 20px;
+   object-fit: cover;
+  }
+  &__info {
+   position: absolute;
+   bottom: 0px;
+   text-align: center;
+  }
+  &__title{
+   text-align: center;
+   margin: 0px auto;
+  }
  }
 }
