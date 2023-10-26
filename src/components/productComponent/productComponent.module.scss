@@ -36,3 +36,21 @@
   font-size: 16px;
  }
 }
+
+@media(max-width: 850px){
+
+ .ProductComponent{
+  display: block;
+  &__image {
+   text-align: center;
+   width: 100%;
+   object-fit: cover;
+  }
+  &__info{
+   margin-top: 20px;
+   padding: 10px;
+   margin-left: 0px;
+   text-align: center;
+  }
+ }
+}

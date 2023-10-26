@@ -14,7 +14,6 @@
  &__title{
   margin: 0px auto;
   width: 280px;
-  text-align: center;
  }
  &__image {
   width: 200px;
@@ -70,6 +69,12 @@
   }
   &__button {
    margin: 0px auto;
+  }
+  &__title{
+   text-align: center;
+  }
+  &__info{
+   text-align: center;
   }
   &__buttonDelete {
    margin: 0px auto;
